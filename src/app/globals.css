@@ -71,7 +71,7 @@ body {
   .my-img{
     height: 300px;
     width: 300px;
-    background-image: url(../../public/yo.jpg);
+    background-image: url(../../public/img/portafolio-yo.jpg);
     background-size: cover;
     background-position: top;
     border-radius: 10%;
@@ -195,5 +195,84 @@ body {
         }
     }
 
+  }
+}
+
+.proyects.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fix{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  > h1 {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 40px;
+    font-family: monospace;
+  }
+}
+
+.proyects{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+
+  .card-proyect{
+    display: flex;
+    align-items: self-start;
+    gap: 40px;
+    margin-right: 32px;
+    margin-left: 32px;
+    background-color: #373555;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    transition: 3s ease-in;
+
+
+    .img-proyect{
+      width: 200px;
+      height: 200px;
+      border-radius: 5%;
+    }
+
+    .card-proyect-img{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-proyect-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 200px;
+
+      > div {
+        
+        > h3 {
+          color: var(--secondary);
+          font-weight: bold;
+          font-size: 20px;
+          font-family: monospace;
+          margin: 0;
+        }
+      }
+
+      .tecnologies{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+
+    }
   }
 }

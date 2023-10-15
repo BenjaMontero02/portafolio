@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import html from '../../public/svg/html.svg'
@@ -15,16 +16,50 @@ import tailwind from '../../public/svg/tailwind.svg'
 import bootstrap from '../../public/svg/bootstrap.svg'
 import spring from '../../public/svg/spring.svg'
 import docker from '../../public/svg/docker.svg'
+import gimnasia from '../../public/img/gimnasia.png'
 
+import { useEffect, useState } from 'react';
 
 export default function page() {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const proyectsSection = document.querySelector('.proyects');
+      const sectionPosition = proyectsSection.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (sectionPosition < screenHeight * 0.75) {
+        setIsVisible(true);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll);
+
+    // Limpia el evento de scroll cuando el componente se desmonta
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // El segundo argumento [] asegura que el efecto solo se ejecute una vez al montar el componente
+
+
+
+
+
+
+
+
+  
+
+
   return (
     <main>
       <section className='bannerMe'>
           <div className='my-img'></div>
         <div>
           <div className='my'>
-            <h1>Benjamin Montero</h1>
+            <h1>BENJAMIN MONTERO</h1>
             <h3 className='h3'>Full Stack</h3>
           </div>
           <div className='aboutMe'>
@@ -106,9 +141,65 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section>
-        <h1 id="proyects">Proyects</h1>
-        <h3></h3>
+      <div className='fix'><h1 id="proyects">Proyects</h1></div>
+      <section className='proyects'>
+        <div className='card-proyect'>
+          <div className='card-proyect-img'>
+            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
+            git or web
+          </div>
+          <div className='card-proyect-content'>
+            <div>
+              <h3>Torneo Gimnasia - Club Rivadavia</h3>
+              <p>Este proyecto fue para un familiar, en el cual se buscaba automatizar la carga de puntaje de las juezas en un torneo de
+                gimnasia artistica, las juezas cargaban el puntaje de cada aparato en el cual pasaban las gimnastas por categoria y nivel,
+                para luego al finaliazar la pasada, sacar los puntajes y los podios de las mismas.
+                Ademas se realizo un CRUD de gimnastas, utilizando NodeJS con SequelizeORM, sobre una db en PostgreSQL
+              </p>
+            </div>
+            <div className='tecnologies'>
+              <p>Se utilizo: </p><Image src={postgres}/> <Image src={tailwind}/> <Image src={nextjs}/> <Image src={node}/>
+            </div>
+          </div>
+        </div>
+        <div className='card-proyect'>
+          <div className='card-proyect-img'>
+            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
+            git or web
+          </div>
+          <div className='card-proyect-content'>
+            <div>
+              <h3>Torneo Gimnasia - Club Rivadavia</h3>
+              <p>Este proyecto fue para un familiar, en el cual se buscaba automatizar la carga de puntaje de las juezas en un torneo de
+                gimnasia artistica, las juezas cargaban el puntaje de cada aparato en el cual pasaban las gimnastas por categoria y nivel,
+                para luego al finaliazar la pasada, sacar los puntajes y los podios de las mismas.
+                Ademas se realizo un CRUD de gimnastas, utilizando NodeJS con SequelizeORM, sobre una db en PostgreSQL
+              </p>
+            </div>
+            <div className='tecnologies'>
+              <p>Se utilizo: </p><Image src={postgres}/> <Image src={tailwind}/> <Image src={nextjs}/> <Image src={node}/>
+            </div>
+          </div>
+        </div>
+        <div className='card-proyect'>
+          <div className='card-proyect-img'>
+            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
+            git or web
+          </div>
+          <div className='card-proyect-content'>
+            <div>
+              <h3>Torneo Gimnasia - Club Rivadavia</h3>
+              <p>Este proyecto fue para un familiar, en el cual se buscaba automatizar la carga de puntaje de las juezas en un torneo de
+                gimnasia artistica, las juezas cargaban el puntaje de cada aparato en el cual pasaban las gimnastas por categoria y nivel,
+                para luego al finaliazar la pasada, sacar los puntajes y los podios de las mismas.
+                Ademas se realizo un CRUD de gimnastas, utilizando NodeJS con SequelizeORM, sobre una db en PostgreSQL
+              </p>
+            </div>
+            <div className='tecnologies'>
+              <p>Se utilizo: </p><Image src={postgres}/> <Image src={tailwind}/> <Image src={nextjs}/> <Image src={node}/>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   )

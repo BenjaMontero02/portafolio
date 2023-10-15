@@ -11,6 +11,11 @@ import node from '../../public/svg/node.svg'
 import php from '../../public/svg/php.svg'
 import react from '../../public/svg/react.svg'
 import postgres from '../../public/svg/postgres.svg'
+import tailwind from '../../public/svg/tailwind.svg'
+import bootstrap from '../../public/svg/bootstrap.svg'
+import spring from '../../public/svg/spring.svg'
+import docker from '../../public/svg/docker.svg'
+
 
 export default function page() {
   return (
@@ -54,20 +59,20 @@ export default function page() {
             <h4>NextJs</h4>
           </div>
           <div className='card-skills'>
-            <Image src={html}/>
+            <Image src={tailwind}/>
             <h4>TailwindCSS</h4>
           </div>
           <div className='card-skills'>
-            <Image src={html}/>
-            <h4>BootStrap</h4>
+            <Image src={bootstrap}/>
+            <h4>Bootstrap</h4>
           </div>
           <div className='card-skills'>
             <Image src={java}/>
             <h4>Java</h4>
           </div>
           <div className='card-skills'>
-            <Image src={html}/>
-            <h4>SpringBoot</h4>
+            <i class="devicon-spring-plain colored" width="32px" height="32px"></i>
+            <h4>Spring</h4>
           </div>
           <div className='card-skills'>
             <Image src={php}/>
@@ -88,6 +93,10 @@ export default function page() {
           <div className='card-skills'>
             <Image src={git}/>
             <h4>Git</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={docker}/>
+            <h4>Docker</h4>
           </div>
           <div className='card-skills'>
             <Image src={html}/>

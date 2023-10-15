@@ -20,7 +20,7 @@ import gimnasia from '../../public/img/gimnasia.png'
 
 import { useEffect, useState } from 'react';
 
-export default function page() {
+export default function Page() {
 
   const [isVisible, setIsVisible] = useState(false);
 

@@ -20,7 +20,7 @@ import docker from '../../public/svg/docker.svg'
 export default function page() {
   return (
     <main>
-      <section className='bannerMe' id='aboutMe'>
+      <section className='bannerMe'>
           <div className='my-img'></div>
         <div>
           <div className='my'>
@@ -71,7 +71,7 @@ export default function page() {
             <h4>Java</h4>
           </div>
           <div className='card-skills'>
-            <i class="devicon-spring-plain colored" width="32px" height="32px"></i>
+            <i className="devicon-spring-plain colored" width="32px" height="32px"></i>
             <h4>Spring</h4>
           </div>
           <div className='card-skills'>
@@ -98,15 +98,17 @@ export default function page() {
             <Image src={docker}/>
             <h4>Docker</h4>
           </div>
-          <div className='card-skills'>
-            <Image src={html}/>
-            <h4>Scrum</h4>
-          </div>
-          <div className='card-skills'>
-            <Image src={html}/>
-            <h4>UX/UI</h4>
+        </div>
+        <div className='otherSkills'>
+          <div>
+            <h4>Other Skills:</h4>
+            <p>Scrum - MicroServices - UX/UI</p>
           </div>
         </div>
+      </section>
+      <section>
+        <h1 id="proyects">Proyects</h1>
+        <h3></h3>
       </section>
     </main>
   )

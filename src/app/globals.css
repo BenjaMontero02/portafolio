@@ -74,9 +74,9 @@ body {
     background-image: url(../../public/yo.jpg);
     background-size: cover;
     background-position: top;
-    border-radius: 50%;
+    border-radius: 10%;
 
-    box-shadow: #9691B84d 0px 19px 38px, #9691B838 0px 15px 12px;
+    box-shadow: #0503174d 0px 19px 38px, #05031738 0px 15px 12px;
   }
 
   .aboutMe{
@@ -98,7 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: top;
-  align-items: start;
+  align-items: flex-start;
 
   > h1 {
     color: var(--secondary);
@@ -163,4 +163,37 @@ body {
     font-family: monospace;
   }
 
+  .otherSkills{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+    > div {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      height: auto;
+      align-items: center;
+      margin-left: 32px;
+      margin-right: 32px;
+      gap: 10px;
+      margin-top: 32px;
+
+      > h4 {
+          color: var(--secondary);
+          font-weight: bold;
+          font-size: 20px;
+          font-family: monospace;
+          padding: 0;
+          margin: 0;
+        }
+
+        >p {
+          padding: 0;
+          margin: 0;
+        }
+    }
+
+  }
 }

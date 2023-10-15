@@ -5,11 +5,11 @@ export default function Header() {
     <header className="header">
         <nav>
           <ul className='navBar'>
-            <a href='#aboutMe'><li className="hover">ABOUT ME</li></a>
+            <a><li className="hover" >ABOUT ME</li></a>
             <li>|</li>
             <a href='#skills'><li className="hover">SKILLS</li></a>
             <li>|</li>
-            <a><li className="hover">PROYECTS</li></a>
+            <a href='#proyects'><li className="hover">PROYECTS</li></a>
             <li>|</li>
             <a href=''><li className="hover">CONTACT</li></a>
             <button>CV</button>

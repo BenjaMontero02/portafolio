@@ -23,9 +23,9 @@ export default function page() {
             <h3 className='h3'>Full Stack</h3>
           </div>
           <div className='aboutMe'>
-            <p>Hi, I'm Benjamin Montero and I'm a passionate Full Stack developer with a strong preference for the backend. I'm 21 years old, I'm currently finishing my degree at TUDAI in the Faculty of Exactas, Tandil.<br/>
-            My interest in the backend is not only limited to writing code, but also to understand how applications can be more efficient, secure and scalable that not only meet requirements.<br/>
-            In addition to my dedication to programming, I enjoy learning about new technologies and exploring innovative ways to solve problems, I strongly believe in continuous learning and I am committed to improve my skills and knowledge to remain relevant in such a dynamic field as web development.</p>
+            <p>Hola! Soy Benjamin Montero y soy un apasionado desarrollador Full Stack con una gran preferencia por el backend. Tengo 21 años de edad, actualmente estoy finalizando mi carrera en TUDAI en la Facultad de Exactas, Tandil.<br/>
+            Mi interés por el backend no solo se limita a la escritura de código, sino también a entender cómo las aplicaciones pueden ser mas eficientes, seguras y escalables que no solo cumplan con los requisitos.<br/>
+            Además de mi dedicación a la programación, disfruto aprendiendo sobre nuevas tecnologías y explorando formas innovadoras de resolver problemas, creo firmemente en el aprendizaje continuo y estoy comprometido a mejorar mis habilidades y conocimientos para seguir siendo relevante en un campo tan dinámico como el desarrollo web.</p>
           </div>
         </div>
       </section>

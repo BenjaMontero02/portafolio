@@ -1,95 +1,104 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import React from 'react'
+import html from '../../public/svg/html.svg'
+import css from '../../public/svg/css.svg'
+import git from '../../public/svg/git.svg'
+import java from '../../public/svg/java.svg'
+import js from '../../public/svg/js.svg'
+import mysql from '../../public/svg/mysql.svg'
+import nextjs from '../../public/svg/nextjs.svg'
+import node from '../../public/svg/node.svg'
+import php from '../../public/svg/php.svg'
+import react from '../../public/svg/react.svg'
+import postgres from '../../public/svg/postgres.svg'
 
-export default function Home() {
+export default function page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
+    <main>
+      <section className='bannerMe' id='aboutMe'>
+          <div className='my-img'></div>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <div className='my'>
+            <h1>Benjamin Montero</h1>
+            <h3 className='h3'>Full Stack</h3>
+          </div>
+          <div className='aboutMe'>
+            <p>Hi, I'm Benjamin Montero and I'm a passionate Full Stack developer with a strong preference for the backend. I'm 21 years old, I'm currently finishing my degree at TUDAI in the Faculty of Exactas, Tandil.<br/>
+            My interest in the backend is not only limited to writing code, but also to understand how applications can be more efficient, secure and scalable that not only meet requirements.<br/>
+            In addition to my dedication to programming, I enjoy learning about new technologies and exploring innovative ways to solve problems, I strongly believe in continuous learning and I am committed to improve my skills and knowledge to remain relevant in such a dynamic field as web development.</p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className='skills' id='skills'>
+        <h1>Skills</h1>
+        <div className='skills-content'>
+          <div className='card-skills'>
+            <Image src={html}/>
+            <h4>HTML</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={css}/>
+            <h4>CSS</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={js}/>
+            <h4>JavaScript</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={react}/>
+            <h4>React</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={nextjs}/>
+            <h4>NextJs</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={html}/>
+            <h4>TailwindCSS</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={html}/>
+            <h4>BootStrap</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={java}/>
+            <h4>Java</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={html}/>
+            <h4>SpringBoot</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={php}/>
+            <h4>PHP</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={node}/>
+            <h4>Node + Express</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={postgres}/>
+            <h4>PostgreSQL</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={mysql}/>
+            <h4>MySQL</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={git}/>
+            <h4>Git</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={html}/>
+            <h4>Scrum</h4>
+          </div>
+          <div className='card-skills'>
+            <Image src={html}/>
+            <h4>UX/UI</h4>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

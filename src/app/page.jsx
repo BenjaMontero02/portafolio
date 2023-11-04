@@ -19,6 +19,7 @@ import docker from '../../public/svg/docker.svg'
 import gimnasia from '../../public/img/gimnasia.png'
 
 import { useEffect, useState } from 'react';
+import Contact from '../components/contact'
 
 export default function Page() {
 
@@ -163,22 +164,20 @@ export default function Page() {
           </div>
         </div>
         <div className='card-proyect'>
-          <div className='card-proyect-img'>
-            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
-            git or web
-          </div>
           <div className='card-proyect-content'>
             <div>
-              <h3>Torneo Gimnasia - Club Rivadavia</h3>
-              <p>Este proyecto fue para un familiar, en el cual se buscaba automatizar la carga de puntaje de las juezas en un torneo de
-                gimnasia artistica, las juezas cargaban el puntaje de cada aparato en el cual pasaban las gimnastas por categoria y nivel,
-                para luego al finaliazar la pasada, sacar los puntajes y los podios de las mismas.
-                Ademas se realizo un CRUD de gimnastas, utilizando NodeJS con SequelizeORM, sobre una db en PostgreSQL
+              <h3>Comercio - Web 2</h3>
+              <p>En este proyecto se realizo como entrega final de la materia Web 2, en la cual se hizo un CRUD de productos y categorias, donde tambien
+                se hizo un Sistema de Usuarios con roles(admin y user). Esto se realizo con PHP, MySQL y Smarty como motor de plantilla.
               </p>
             </div>
             <div className='tecnologies'>
-              <p>Se utilizo: </p><Image src={postgres}/> <Image src={tailwind}/> <Image src={nextjs}/> <Image src={node}/>
+              <p>Se utilizo: </p><Image src={postgres}/> <Image src={mysql}/>
             </div>
+          </div>
+          <div className='card-proyect-img'>
+            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
+            git or web
           </div>
         </div>
         <div className='card-proyect'>
@@ -201,6 +200,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <Contact/>
     </main>
   )
 }

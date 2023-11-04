@@ -276,3 +276,72 @@ body {
     }
   }
 }
+
+.contact-head{
+  display: flex;
+  justify-content: center;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-bottom: 64px;
+
+  >h1{
+    margin: 0;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 40px;
+    font-family: monospace;
+  }
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 200px;
+
+  .form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #373555;
+    border-radius: 10px;
+    padding: 32px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+
+      > label {
+        margin-bottom: 4px;
+      }
+
+      > input {
+        display: flex;
+        justify-content: top;
+        outline: none;
+      }
+
+      .input-text{
+        height: 150px;
+      }
+
+      .error{
+        color: red;
+        font-weight: lighter;
+        margin-top: 3px;
+        font-size: small;
+      }
+    }
+  }
+
+
+}
+
+.confilct{
+  background-color: red;
+}

@@ -1,7 +1,11 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import Email from './email';
 const axios = require('axios');
+import Image from 'next/image'
+import wsp from "../../public/svg/wsp.svg"
+import linkedin from "../../public/svg/in.svg"
+import github from "../../public/svg/github.svg"
+
 
 
 export default function Contact() {
@@ -11,23 +15,46 @@ export default function Contact() {
     } = useForm();
 
     const onSubmit = handleSubmit(async (data) => {
-        console.log(data);
+
         axios.post("/api/send", {
             email: data.email,
             subject: data.subject,
             messageText: data.messageText
-        }).then(function (response) {
-            console.log(response);
         })
+
+        document.getElementById("send").classList.add("success");
     })
+
+    const sendMessageWsp = () => {
+        const phoneNumber = '+5492494208260';
+        const whatsappLink = `https://wa.me/${phoneNumber}`;
+        window.open(whatsappLink, '_blank');
+    }
+
+    const linkToIn = () => {
+        const whatsappLink = `https://www.linkedin.com/in/benjaminmontero/`;
+        window.open(whatsappLink, '_blank');
+    }
+
+    const linkToGh = () => {
+        const whatsappLink = `https://github.com/BenjaMontero02`;
+        window.open(whatsappLink, '_blank');
+    }
 
     return (
         <>
-        <div className='contact-head'><h1>Contact</h1></div><section className='contact'>
-            <div>
-                github linkedin whatsapp email
+        <div className='contact-head'><h1 id='contact'>Contact</h1></div>
+        <section className='contact'>
+            <div className='contact-details'>
+                <p>Si llegaste hasta aca espero que te haya gustado conocerme un poco. No dudes en contactarme!</p>
+                <p>Te dejo mis redes sociales y un formulario donde podras enviarme un mail.</p>
+                <div>
+                    <button onClick={linkToIn}><Image src={linkedin}/></button>
+                    <button onClick={sendMessageWsp}><Image src={wsp}/></button>
+                    <button className='gh' onClick={linkToGh}><div className='blank'></div><Image src={github}/></button>
+                </div>
             </div>
-            <div>
+            <div className='form-content'>
                 <form className='form' onSubmit={onSubmit}>
                     <div>
                         <label htmlFor='email' >Email:</label>
@@ -52,12 +79,15 @@ export default function Contact() {
                     </div>
                     <div>
                         <label htmlFor='messageText'>Message:</label>
-                        <input type='text' className='input-text' {...register("messageText", {
+                        <textarea className='input-text' {...register("messageText", {
                             required: true
-                        })}></input>
+                        })}>
+                        </textarea>
                         {errors.messageText && <span className='error'>message is required</span>}
                     </div>
-                    <button type='submit'>SEND</button>
+                    
+                    <button type='submit' id='send'>SEND</button>
+                    
                 </form>
             </div>
         </section>

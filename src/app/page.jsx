@@ -48,24 +48,18 @@ export default function Page() {
 
 
 
-
-
-
-  
-
-
   return (
     <main>
       <section className='bannerMe'>
-          <div className='my-img'></div>
+          <div className='my-img' id='my-img'></div>
         <div>
           <div className='my'>
             <h1>BENJAMIN MONTERO</h1>
             <h3 className='h3'>Full Stack</h3>
           </div>
           <div className='aboutMe'>
-            <p>Hola! Soy Benjamin Montero y soy un apasionado desarrollador Full Stack con una gran preferencia por el backend. Tengo 21 años de edad, actualmente estoy finalizando mi carrera en TUDAI en la Facultad de Exactas, Tandil.<br/>
-            Mi interés por el backend no solo se limita a la escritura de código, sino también a entender cómo las aplicaciones pueden ser mas eficientes, seguras y escalables que no solo cumplan con los requisitos.<br/>
+            <p>Hola! Soy Benjamin Montero y soy un apasionado desarrollador Full Stack con una gran preferencia por el backend. Tengo 21 años de edad, actualmente estoy finalizando mi carrera en TUDAI en la Facultad de Exactas, Tandil.
+            Mi interés por el backend no solo se limita a la escritura de código, sino también a entender cómo las aplicaciones pueden ser mas eficientes, seguras y escalables que no solo cumplan con los requisitos.
             Además de mi dedicación a la programación, disfruto aprendiendo sobre nuevas tecnologías y explorando formas innovadoras de resolver problemas, creo firmemente en el aprendizaje continuo y estoy comprometido a mejorar mis habilidades y conocimientos para seguir siendo relevante en un campo tan dinámico como el desarrollo web.</p>
           </div>
         </div>
@@ -74,71 +68,60 @@ export default function Page() {
       <section className='skills' id='skills'>
         <h1>Skills</h1>
         <div className='skills-content'>
-          <div className='card-skills'>
-            <Image src={html}/>
-            <h4>HTML</h4>
+          <div className='skills-card'>
+              <h3>FrontEnd</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>  
+                <li>UX/UI</li>  
+              </ul> 
           </div>
-          <div className='card-skills'>
-            <Image src={css}/>
-            <h4>CSS</h4>
+          <div className='skills-card'>
+              <h3>BackEnd</h3>
+              <ul>
+                <li>Java</li>
+                <li>PHP</li>  
+                <li>Node.js + Express</li>  
+              </ul> 
           </div>
-          <div className='card-skills'>
-            <Image src={js}/>
-            <h4>JavaScript</h4>
+          <div className='skills-card'>
+              <h3>Bases de Datos</h3>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>    
+              </ul> 
           </div>
-          <div className='card-skills'>
-            <Image src={react}/>
-            <h4>React</h4>
+          <div className='skills-card'>
+              <h3>Arquitecturas y Patrones</h3>
+              <ul>
+                <li>Microservicios</li>
+                <li>MVC</li>
+                <li>POO</li>    
+              </ul> 
           </div>
-          <div className='card-skills'>
-            <Image src={nextjs}/>
-            <h4>NextJs</h4>
+          <div className='skills-card'>
+              <h3>Frameworks</h3>
+              <ul>
+                <li>React</li>
+                <li>Nextjs</li>
+                <li>Spring</li> 
+                <li>Spring Boot</li>       
+              </ul> 
           </div>
-          <div className='card-skills'>
-            <Image src={tailwind}/>
-            <h4>TailwindCSS</h4>
+          <div className='skills-card'>
+              <h3>Herramientas</h3>
+              <ul>
+                <li>Git</li>
+                <li>Docker</li>  
+                <li>Figma</li>   
+              </ul> 
           </div>
-          <div className='card-skills'>
-            <Image src={bootstrap}/>
-            <h4>Bootstrap</h4>
-          </div>
-          <div className='card-skills'>
-            <Image src={java}/>
-            <h4>Java</h4>
-          </div>
-          <div className='card-skills'>
-            <i className="devicon-spring-plain colored" width="32px" height="32px"></i>
-            <h4>Spring</h4>
-          </div>
-          <div className='card-skills'>
-            <Image src={php}/>
-            <h4>PHP</h4>
-          </div>
-          <div className='card-skills'>
-            <Image src={node}/>
-            <h4>Node + Express</h4>
-          </div>
-          <div className='card-skills'>
-            <Image src={postgres}/>
-            <h4>PostgreSQL</h4>
-          </div>
-          <div className='card-skills'>
-            <Image src={mysql}/>
-            <h4>MySQL</h4>
-          </div>
-          <div className='card-skills'>
-            <Image src={git}/>
-            <h4>Git</h4>
-          </div>
-          <div className='card-skills'>
-            <Image src={docker}/>
-            <h4>Docker</h4>
-          </div>
-        </div>
-        <div className='otherSkills'>
-          <div>
-            <h4>Other Skills:</h4>
-            <p>Scrum - MicroServices - UX/UI</p>
+          <div className='skills-card'>
+              <h3>Metodologias agiles</h3>
+              <ul>
+                <li>Scrum</li>        
+              </ul> 
           </div>
         </div>
       </section>
@@ -201,6 +184,10 @@ export default function Page() {
         </div>
       </section>
       <Contact/>
+      <footer>
+        <p></p>
+        <h4>&lt; Benjamin Montero /&gt;</h4>
+      </footer>
     </main>
   )
 }

@@ -11,7 +11,7 @@ export default function Header() {
             <li>|</li>
             <a href='#proyects'><li className="hover">PROYECTS</li></a>
             <li>|</li>
-            <a href=''><li className="hover">CONTACT</li></a>
+            <a href='#contact'><li className="hover">CONTACT</li></a>
             <button>CV</button>
           </ul>
         </nav>

@@ -122,38 +122,47 @@ body {
 }
 
 .skills{
-  margin-top: 100px;
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 96px;
-
-  .card-skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #373555;
-    padding: 10px;
-    border-radius: 8px;
-    gap: 8px;
-    width: 130px;
-    
-    > h4 {
-      margin: 0;
-      padding: 0;
-    }
-  }
+  margin-bottom: 36px;
 
   .skills-content{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-items: center;
     margin-left: 32px;
     margin-right: 32px;
+    font-family: monospace;
+    font-size: 20px;
+   
+
+    > div {
+      height: 150px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+
+      >h3 {
+        margin: 0;
+        color: var(--secondary);
+      }
+
+      > ul {
+        padding: 0;
+        list-style: circle;
+        margin-left: 20px;
+      }
+
+    }
+
   }
 
   > h1 {
@@ -163,39 +172,6 @@ body {
     font-family: monospace;
   }
 
-  .otherSkills{
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-
-    > div {
-      display: flex;
-      width: 100%;
-      justify-content: flex-start;
-      height: auto;
-      align-items: center;
-      margin-left: 32px;
-      margin-right: 32px;
-      gap: 10px;
-      margin-top: 32px;
-
-      > h4 {
-          color: var(--secondary);
-          font-weight: bold;
-          font-size: 20px;
-          font-family: monospace;
-          padding: 0;
-          margin: 0;
-        }
-
-        >p {
-          padding: 0;
-          margin: 0;
-        }
-    }
-
-  }
 }
 
 .proyects.appear {
@@ -282,7 +258,7 @@ body {
   justify-content: center;
   margin-right: 32px;
   margin-left: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 16px;
 
   >h1{
     margin: 0;
@@ -294,40 +270,54 @@ body {
 }
 
 .contact{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 20px;
-  justify-items: stretch;
-  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 32px;
   margin-right: 32px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
   .form {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     background-color: #373555;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 32px;
+    width: 600px;
 
     > div {
       display: flex;
       flex-direction: column;
       margin-bottom: 16px;
+      font-family: monospace;
 
       > label {
         margin-bottom: 4px;
+        font-size: 18px;
       }
 
       > input {
-        display: flex;
-        justify-content: top;
+        padding: 6px;
+        font-size: 15px;
+        border-radius: 8px;
         outline: none;
+        border: none;
+        background-color: var(--shades2);
+        color: var(--secondary);
       }
 
       .input-text{
         height: 150px;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: var(--shades2);
+        color: var(--secondary);
+        resize: none;
+        outline: none;
+        border: none;
+        padding: 6px;
       }
 
       .error{
@@ -337,11 +327,149 @@ body {
         font-size: small;
       }
     }
+
+    #send{
+      background-color: #9aaaff;
+      font-size: 15px;
+      color: var(--secondary);
+      border: none;
+      border-radius: 8px;
+      padding: 6px;
+      cursor: pointer;
+    }
   }
 
 
 }
+.contact-details{
+  margin-bottom: 16px;
 
+  > div {
+    display: flex;
+    gap: 8px;
+    outline: none;
+    align-items: center;
+
+    > button {
+      width: fit-content;
+      cursor: pointer;
+      height: fit-content;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .gh{
+
+      position: relative;
+
+      .blank{
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        border-radius: 100%;
+        width: 30px;
+        height: 38px;
+        background-color: #FFFFFF;
+        z-index: -1;
+      }
+    }
+
+  }
+}
 .confilct{
   background-color: red;
+}
+
+footer{
+  display: block;
+  border-top: 1px solid #373555;
+  position: relative;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+
+  > h4{
+    position: absolute;
+    top: -30px;
+    width: fit-content;
+    background-color: #0E0B2A;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: monospace;
+    color: var(--secondary);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    .bannerMe{
+      display: flex;
+      flex-direction: column;
+      margin-left: 32px;
+      margin-right: 32px;
+
+      .my{
+        >h1{
+          font-size: 35px;
+        }
+
+      }
+
+      #my-img{
+        display: none;
+      }
+    }
+
+    .skills{
+
+      .skills-content{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        
+        .skills-card{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+      }
+    }
+
+    .proyects{
+
+      .card-proyect{
+        height: 100vw;
+
+        .card-proyect-img{
+          display: none;
+        }
+      }
+    }
+
+    .contact{
+
+      .form-content{
+        display: flex;
+        justify-content: center;
+      }
+
+      .form{
+        width: 300px;
+      }
+    }
+
+    footer{
+
+      >h4{
+        top: -28px;
+      }
+    }
 }

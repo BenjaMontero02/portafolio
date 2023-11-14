@@ -14,6 +14,14 @@ body {
   position: relative;
 }
 
+.btn-burger{
+  display: none;
+}
+
+.btn-burger-close{
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -152,7 +160,7 @@ body {
       width: 250px;
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
       justify-content: flex-start;
 
       >h3 {
@@ -207,7 +215,7 @@ body {
 
   .card-proyect{
     display: flex;
-    align-items: self-start;
+    align-items: flex-start;
     gap: 40px;
     margin-right: 32px;
     margin-left: 32px;

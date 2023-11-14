@@ -8,6 +8,7 @@ import postgres from '../../public/svg/postgres.svg'
 import tailwind from '../../public/svg/tailwind.svg'
 import gimnasia from '../../public/img/gimnasia.png'
 import design from '../../public/img/design.png'
+import comercio from '../../public/img/comercio.png'
 import springboot from '../../public/svg/springboot.svg'
 import java from '../../public/svg/java.svg'
 import php from '../../public/svg/php.svg'
@@ -147,7 +148,7 @@ export default function Page() {
         </div>
         <div className='card-proyect'>
         <div className='card-proyect-img'>
-            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
+            <Image src={comercio} alt='comercio' className='img-proyect'/>
             <a href="https://github.com/BenjaMontero02/Tpe_Web2_LucasAmendola_BenjaminMontero"><Image src={gh} alt='gh'/></a>
           </div>
           <div className='card-proyect-content'>

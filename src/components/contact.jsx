@@ -50,9 +50,9 @@ export default function Contact() {
                 <p>Si llegaste hasta aca espero que te haya gustado conocerme un poco. No dudes en contactarme!</p>
                 <p>Te dejo mis redes sociales y un formulario donde podras enviarme un mail.</p>
                 <div>
-                    <button onClick={linkToIn}><Image src={linkedin}/></button>
-                    <button onClick={sendMessageWsp}><Image src={wsp}/></button>
-                    <button className='gh' onClick={linkToGh}><div className='blank'></div><Image src={github}/></button>
+                    <button onClick={linkToIn}><Image src={linkedin} alt='linkedin'/></button>
+                    <button onClick={sendMessageWsp}><Image src={wsp} alt='whatsapp'/></button>
+                    <button className='gh' onClick={linkToGh}><div className='blank'></div><Image src={github} alt='github'/></button>
                 </div>
             </div>
             <div className='form-content'>

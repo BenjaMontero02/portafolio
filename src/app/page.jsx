@@ -1,51 +1,15 @@
-'use client'
+
 import Image from 'next/image'
 import React from 'react'
-import html from '../../public/svg/html.svg'
-import css from '../../public/svg/css.svg'
-import git from '../../public/svg/git.svg'
-import java from '../../public/svg/java.svg'
-import js from '../../public/svg/js.svg'
 import mysql from '../../public/svg/mysql.svg'
 import nextjs from '../../public/svg/nextjs.svg'
 import node from '../../public/svg/node.svg'
-import php from '../../public/svg/php.svg'
-import react from '../../public/svg/react.svg'
 import postgres from '../../public/svg/postgres.svg'
 import tailwind from '../../public/svg/tailwind.svg'
-import bootstrap from '../../public/svg/bootstrap.svg'
-import spring from '../../public/svg/spring.svg'
-import docker from '../../public/svg/docker.svg'
 import gimnasia from '../../public/img/gimnasia.png'
-
-import { useEffect, useState } from 'react';
 import Contact from '../components/contact'
 
 export default function Page() {
-
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const proyectsSection = document.querySelector('.proyects');
-      const sectionPosition = proyectsSection.getBoundingClientRect().top;
-      const screenHeight = window.innerHeight;
-
-      if (sectionPosition < screenHeight * 0.75) {
-        setIsVisible(true);
-      }
-    };
-
-    document.addEventListener('scroll', handleScroll);
-
-    // Limpia el evento de scroll cuando el componente se desmonta
-    return () => {
-      document.removeEventListener('scroll', handleScroll);
-    };
-  }, []); // El segundo argumento [] asegura que el efecto solo se ejecute una vez al montar el componente
-
-
-
 
 
   return (
@@ -142,7 +106,7 @@ export default function Page() {
               </p>
             </div>
             <div className='tecnologies'>
-              <p>Se utilizo: </p><Image src={postgres}/> <Image src={tailwind}/> <Image src={nextjs}/> <Image src={node}/>
+              <p>Se utilizo: </p><Image src={postgres} alt='postgres'/> <Image src={tailwind} alt='tailwind'/> <Image src={nextjs} alt='nextjs'/> <Image src={node} alt='node'/>
             </div>
           </div>
         </div>
@@ -155,7 +119,7 @@ export default function Page() {
               </p>
             </div>
             <div className='tecnologies'>
-              <p>Se utilizo: </p><Image src={postgres}/> <Image src={mysql}/>
+              <p>Se utilizo: </p><Image src={postgres} alt='postges'/> <Image src={mysql} alt='mysql'/>
             </div>
           </div>
           <div className='card-proyect-img'>
@@ -178,7 +142,7 @@ export default function Page() {
               </p>
             </div>
             <div className='tecnologies'>
-              <p>Se utilizo: </p><Image src={postgres}/> <Image src={tailwind}/> <Image src={nextjs}/> <Image src={node}/>
+              <p>Se utilizo: </p><Image src={postgres} alt='postgres'/> <Image src={tailwind} alt='tailwind'/> <Image src={nextjs} alt='nextjs'/> <Image src={node} alt='node'/>
             </div>
           </div>
         </div>

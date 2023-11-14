@@ -31,8 +31,8 @@ export default function Header() {
 
   return (
     <>
-    <button className='btn-burger' onClick={btnOpen} id='btnOpen'><Image src={menu}/></button>
-    <button className='btn-burger-close' onClick={btnClose} id='btnClose'><Image src={close}/></button>
+    <button className='btn-burger' onClick={btnOpen} id='btnOpen'><Image src={menu} alt='btn-open'/></button>
+    <button className='btn-burger-close' onClick={btnClose} id='btnClose'><Image src={close} alt='btn-close'/></button>
     <header className="header" id='header'>
       <nav>
         <ul className='navBar' id='navBar'>

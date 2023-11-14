@@ -30,22 +30,22 @@ export default function Header() {
   }
 
   return (
-    <>
-    <button className='btn-burger' onClick={btnOpen} id='btnOpen'><Image src={menu} alt='btn-open'/></button>
-    <button className='btn-burger-close' onClick={btnClose} id='btnClose'><Image src={close} alt='btn-close'/></button>
-    <header className="header" id='header'>
-      <nav>
-        <ul className='navBar' id='navBar'>
-          <a href="#about-me" className='anc'><li className="hover" onClick={btnClose}>ABOUT ME</li></a>
-          <li className='barra'>|</li>
-          <a href='#skills' className='anc'><li className="hover" onClick={btnClose}>SKILLS</li></a>
-          <li className='barra'>|</li>
-          <a href='#proyects' className='anc'><li className="hover" onClick={btnClose}>PROYECTS</li></a>
-          <li className='barra'>|</li>
-          <a href='#contact' className='anc'><li className="hover" onClick={btnClose}>CONTACT</li></a>
-          <button className='cv'>CV</button>
-        </ul>
-      </nav>
-    </header><div className='overlay' id='overlay'></div></>
+    <><div className='btns'>
+      <button className='btn-burger' onClick={btnOpen} id='btnOpen'><Image src={menu} alt='btn-open' /></button>
+      <button className='btn-burger-close' onClick={btnClose} id='btnClose'><Image src={close} alt='btn-close' /></button>
+    </div><header className="header" id='header'>
+        <nav>
+          <ul className='navBar' id='navBar'>
+            <a href="#about-me" className='anc'><li className="hover" onClick={btnClose}>ABOUT ME</li></a>
+            <li className='barra'>|</li>
+            <a href='#skills' className='anc'><li className="hover" onClick={btnClose}>SKILLS</li></a>
+            <li className='barra'>|</li>
+            <a href='#proyects' className='anc'><li className="hover" onClick={btnClose}>PROYECTS</li></a>
+            <li className='barra'>|</li>
+            <a href='#contact' className='anc'><li className="hover" onClick={btnClose}>CONTACT</li></a>
+            <button className='cv'>CV</button>
+          </ul>
+        </nav>
+      </header><div className='overlay' id='overlay'></div></>
   )
 }

@@ -14,13 +14,17 @@ body {
   position: relative;
 }
 
-.btn-burger{
-  display: none;
+.btns{
+
+  > .btn-burger{
+    display: none;
+  }
+  
+  > .btn-burger-close{
+    display: none;
+  }
 }
 
-.btn-burger-close{
-  display: none;
-}
 
 .header {
   display: flex;
@@ -429,24 +433,27 @@ footer{
 
     }
 
-    .btn-burger{
-      display: block;
-      position: relative;
-      left: 32px;
-      top: 20px;
-      z-index: 10;
-      border: none;
-      background-color: transparent;
-    }
+    .btns{
 
-    .btn-burger-close{
-      display: none;
-      position: relative;
-      left: 32px;
-      top: 20px;
-      z-index: 10;
-      border: none;
-      background-color: transparent;
+      > .btn-burger{
+        display: block;
+        position: relative;
+        left: 32px;
+        top: 20px;
+        z-index: 10;
+        border: none;
+        background-color: transparent;
+      }
+  
+      > .btn-burger-close{
+        display: none;
+        position: relative;
+        left: 32px;
+        top: 20px;
+        z-index: 10;
+        border: none;
+        background-color: transparent;
+      }
     }
 
     .header{
@@ -494,24 +501,28 @@ footer{
       column-gap: 10px;
     }
     
-    .skills-card{
+    .skills-content{
+      > .skills-card{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        }
     }
 
-    
+    .proyects{
 
-    .card-proyect{
-      height: 100vw;
+      > .card-proyect{
+        height: 100vw;
+  
+        > .card-proyect-img{
+          display: none;
+        }
+      } 
+
     }
     
-    .card-proyect-img{
-      display: none;
-    }
-      
     
 
     .form-content{

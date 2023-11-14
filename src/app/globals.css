@@ -471,7 +471,7 @@ footer{
 
       .navBar{
         flex-direction: column;
-        z-index: 5;
+        z-index: 6;
         position: absolute;
         top: 96px;
         left: -32px;

@@ -428,6 +428,7 @@ footer{
       margin-right: 32px;
 
       .my{
+        
         >h1{
           font-size: 35px;
         }
@@ -437,6 +438,7 @@ footer{
       #my-img{
         display: none;
       }
+
     }
 
     .btn-burger{
@@ -467,29 +469,27 @@ footer{
       background-color: var(--primary);
       z-index: 5;
       display: none;
-      
+    }
 
-      .navBar{
-        flex-direction: column;
-        z-index: 6;
-        position: absolute;
-        top: 96px;
-        left: -32px;
-        gap: 40px;
+    .navBar{
+      flex-direction: column;
+      z-index: 6;
+      position: absolute;
+      top: 96px;
+      left: -32px;
+      gap: 40px;
 
-        > li.barra{
-          display: none
-        }
-
-        > button{
-          width: fit-content;
-          padding-left: 32px;
-          padding-right: 32px;
-          text-align: center;
-          color: #FFFFFF;
-        }
+      > button{
+        width: fit-content;
+        padding-left: 32px;
+        padding-right: 32px;
+        text-align: center;
+        color: #FFFFFF;
       }
+    }
 
+    barra{
+      display: none
     }
 
     .overlay{

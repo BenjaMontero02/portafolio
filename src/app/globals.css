@@ -479,7 +479,7 @@ footer{
         left: -32px;
         gap: 40px;
 
-        .barra{
+        > li.barra{
           display: none
         }
 

@@ -409,7 +409,7 @@ footer{
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .bannerMe{
       display: flex;
       flex-direction: column;
@@ -519,8 +519,12 @@ footer{
       justify-content: center;
     }
 
-    .form{
-      width: 300px;
+    .contact {
+      > .form-content {
+        > .form{
+          width: 300px;
+        }
+      }
     }
     
 

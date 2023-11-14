@@ -43,7 +43,7 @@ export default function Header() {
           <a href='#proyects'><li className="hover" onClick={btnClose}>PROYECTS</li></a>
           <li className='barra'>|</li>
           <a href='#contact'><li className="hover" onClick={btnClose}>CONTACT</li></a>
-          <button>CV</button>
+          <button className='cv'>CV</button>
         </ul>
       </nav>
     </header><div className='overlay' id='overlay'></div></>

@@ -426,17 +426,16 @@ footer{
       flex-direction: column;
       margin-left: 32px;
       margin-right: 32px;
+    }
 
-      .my{
+    #my-img{
+      display: none;
+    }
+
+    .my{
         
-        >h1{
-          font-size: 35px;
-        }
-
-      }
-
-      #my-img{
-        display: none;
+      >h1{
+        font-size: 35px;
       }
 
     }
@@ -478,17 +477,17 @@ footer{
       top: 96px;
       left: -32px;
       gap: 40px;
-
-      > button{
-        width: fit-content;
-        padding-left: 32px;
-        padding-right: 32px;
-        text-align: center;
-        color: #FFFFFF;
-      }
     }
 
-    barra{
+    .cv{
+      width: fit-content;
+      padding-left: 32px;
+      padding-right: 32px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .barra{
       display: none
     }
 
@@ -518,31 +517,28 @@ footer{
       }
     }
 
-    .proyects{
+    
 
       .card-proyect{
         height: 100vw;
-
+      }
         .card-proyect-img{
           display: none;
         }
-      }
+      
+    
+
+    .form-content{
+      display: flex;
+      justify-content: center;
     }
 
-    .contact{
-
-      .form-content{
-        display: flex;
-        justify-content: center;
-      }
-
-      .form{
-        width: 300px;
-      }
+    .form{
+      width: 300px;
     }
+    
 
     footer{
-
       >h4{
         top: -28px;
       }

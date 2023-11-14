@@ -234,7 +234,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      height: 200px;
+      
 
       > div {
         
@@ -435,6 +435,8 @@ footer{
     .btns{
 
       > .btn-burger{
+        padding: 0;
+        margin: 0;
         display: block;
         position: relative;
         left: 32px;
@@ -515,12 +517,13 @@ footer{
     .proyects{
 
       > .card-proyect{
-        height: 100vw;
+        height: 100%;
   
         > .card-proyect-img{
           display: none;
+          height: 100%;
         }
-      } 
+      }
 
     }
     

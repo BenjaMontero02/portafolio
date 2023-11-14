@@ -7,6 +7,8 @@ import node from '../../public/svg/node.svg'
 import postgres from '../../public/svg/postgres.svg'
 import tailwind from '../../public/svg/tailwind.svg'
 import gimnasia from '../../public/img/gimnasia.png'
+import springboot from '../../public/svg/springboot.svg'
+import java from '../../public/svg/java.svg'
 import Contact from '../components/contact'
 
 export default function Page() {
@@ -91,60 +93,74 @@ export default function Page() {
       </section>
       <div className='fix'><h1 id="proyects">Proyects</h1></div>
       <section className='proyects'>
-        <div className='card-proyect'>
+      <div className='card-proyect'>
           <div className='card-proyect-img'>
             <Image src={gimnasia} alt='torneo' className='img-proyect'/>
             git or web
           </div>
           <div className='card-proyect-content'>
             <div>
-              <h3>Torneo Gimnasia - Club Rivadavia</h3>
-              <p>Este proyecto fue para un familiar, en el cual se buscaba automatizar la carga de puntaje de las juezas en un torneo de
-                gimnasia artistica, las juezas cargaban el puntaje de cada aparato en el cual pasaban las gimnastas por categoria y nivel,
-                para luego al finaliazar la pasada, sacar los puntajes y los podios de las mismas.
-                Ademas se realizo un CRUD de gimnastas, utilizando NodeJS con SequelizeORM, sobre una db en PostgreSQL
+              <h3>App Monopatines - Arquitecturas Web</h3>
+              <p>Este proyecto representó el trabajo final de la materia Arquitecturas Web, 
+                enfocándose en la aplicación práctica de los conocimientos adquiridos en 
+                Spring Boot. Se desarrolló una aplicación con una arquitectura basada en microservicios,
+                implementando Spring Cloud Gateway junto con Spring Security + JWT. 
+                <br /><br />
+                El proyecto se centra en una aplicación dedicada a la gestión de monopatines, donde los usuarios tienen la capacidad de utilizar estos vehículos. 
+                La aplicación cuenta con una sólida lógica de negocios que opera en segundo plano. 
+                En este caso, el enfoque se limitó al backend.
+                <br /><br />
+                El sistema consta de cuatro microservicios, siendo el gateway el punto de entrada que se comunica con el microservicio de autenticación (auth). 
+                Tras la validación exitosa, redirige las solicitudes al microservicio correspondiente, ya sea para gestionar usuarios o monopatines. 
+                La implementación integral y la colaboración efectiva de nuestro equipo permitieron alcanzar un notable resultado en este proyecto
               </p>
             </div>
             <div className='tecnologies'>
-              <p>Se utilizo: </p><Image src={postgres} alt='postgres'/> <Image src={tailwind} alt='tailwind'/> <Image src={nextjs} alt='nextjs'/> <Image src={node} alt='node'/>
+              <p>Se utilizo: </p><Image src={postgres} alt='postgres'/> <Image src={mysql} alt='mysql'/> <Image src={java} alt='java'/> <Image src={springboot} alt='springboot'/>
             </div>
           </div>
         </div>
         <div className='card-proyect'>
           <div className='card-proyect-content'>
             <div>
+              <h3>Torneo Gimnasia - Club Rivadavia</h3>
+              <p>Este proyecto fue desarrollado para facilitar y automatizar el proceso de registro de puntajes por parte de las juezas en un torneo de gimnasia artística. 
+                Anteriormente, la carga de puntajes se realizaba manualmente en papel durante otros torneos, lo que implicaba un proceso mas dificil y con limitaciones de tiempo. <br />
+                <br /> En la nueva aplicación, las juezas pueden cargar fácilmente los puntajes asignados a cada gimnasta en distintos aparatos, filtradas por categoría y nivel. 
+                Una vez completada la evaluación en una categoría, la aplicación realiza automáticamente el cálculo de puntajes y la determinación de los podios. <br />
+                <br />Esta nueva aplicacion ha mejorado significativamente la eficiencia del proceso, eliminando la necesidad de sumar los puntajes manualmente y proporcionando resultados más rápidos y precisos. 
+                La aplicación ha sido implementada y seguirá siendo utilizada en los torneos organizados por el Club Rivadavia en la disciplina de Gimnasia Artística, mejorando la experiencia tanto para las juezas como para los participantes en el evento.
+              </p>
+            </div>
+            <div className='tecnologies'>
+              <p>Se utilizo: </p><Image src={postgres} alt='postgres'/> <Image src={tailwind} alt='tailwind'/> <Image src={nextjs} alt='nextjs'/> <Image src={node} alt='node'/>
+            </div>
+          </div>
+          <div className='card-proyect-img'>
+            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
+            git or web
+          </div>
+        </div>
+        <div className='card-proyect'>
+        <div className='card-proyect-img'>
+            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
+            git or web
+          </div>
+          <div className='card-proyect-content'>
+            <div>
               <h3>Comercio - Web 2</h3>
-              <p>En este proyecto se realizo como entrega final de la materia Web 2, en la cual se hizo un CRUD de productos y categorias, donde tambien
-                se hizo un Sistema de Usuarios con roles(admin y user). Esto se realizo con PHP, MySQL y Smarty como motor de plantilla.
+              <p>Este proyecto, presentado como trabajo final de la materia Web 2, fue realizado con el propósito de aplicar y poner en práctica los conocimientos adquiridos 
+                durante el desarrollo de la misma. Enfocándonos en lo basico de la POO y la comprensión de los conceptos claves de la arquitectura MVC... 
+                Se llevó a cabo la creación de un sistema diseñado para gestionar información sobre productos y categorías en un entorno de almacenamiento/mercado. <br />
+                <br/>Una parte esencial de este proyecto fue la implementación de una API que realiza operaciones CRUD sobre las entidades de productos y categorías.
+                <br />En el aspecto del frontend, se optó por utilizar Smarty como motor de plantillas
               </p>
             </div>
             <div className='tecnologies'>
               <p>Se utilizo: </p><Image src={postgres} alt='postges'/> <Image src={mysql} alt='mysql'/>
             </div>
           </div>
-          <div className='card-proyect-img'>
-            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
-            git or web
-          </div>
-        </div>
-        <div className='card-proyect'>
-          <div className='card-proyect-img'>
-            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
-            git or web
-          </div>
-          <div className='card-proyect-content'>
-            <div>
-              <h3>Torneo Gimnasia - Club Rivadavia</h3>
-              <p>Este proyecto fue para un familiar, en el cual se buscaba automatizar la carga de puntaje de las juezas en un torneo de
-                gimnasia artistica, las juezas cargaban el puntaje de cada aparato en el cual pasaban las gimnastas por categoria y nivel,
-                para luego al finaliazar la pasada, sacar los puntajes y los podios de las mismas.
-                Ademas se realizo un CRUD de gimnastas, utilizando NodeJS con SequelizeORM, sobre una db en PostgreSQL
-              </p>
-            </div>
-            <div className='tecnologies'>
-              <p>Se utilizo: </p><Image src={postgres} alt='postgres'/> <Image src={tailwind} alt='tailwind'/> <Image src={nextjs} alt='nextjs'/> <Image src={node} alt='node'/>
-            </div>
-          </div>
+          
         </div>
       </section>
       <Contact/>

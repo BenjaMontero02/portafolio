@@ -7,8 +7,11 @@ import node from '../../public/svg/node.svg'
 import postgres from '../../public/svg/postgres.svg'
 import tailwind from '../../public/svg/tailwind.svg'
 import gimnasia from '../../public/img/gimnasia.png'
+import design from '../../public/img/design.png'
 import springboot from '../../public/svg/springboot.svg'
 import java from '../../public/svg/java.svg'
+import php from '../../public/svg/php.svg'
+import gh from '../../public/svg/gh.svg'
 import Contact from '../components/contact'
 
 export default function Page() {
@@ -95,8 +98,8 @@ export default function Page() {
       <section className='proyects'>
       <div className='card-proyect'>
           <div className='card-proyect-img'>
-            <Image src={gimnasia} alt='torneo' className='img-proyect'/>
-            git or web
+            <Image src={design} alt='design' className='img-proyect'/>
+            <a href="https://github.com/BenjaMontero02/AppMonopatines"><Image src={gh} alt='gh'/></a>
           </div>
           <div className='card-proyect-content'>
             <div>
@@ -138,13 +141,13 @@ export default function Page() {
           </div>
           <div className='card-proyect-img'>
             <Image src={gimnasia} alt='torneo' className='img-proyect'/>
-            git or web
+            <a href="https://github.com/BenjaMontero02/AppTorneo"><Image src={gh} alt='gh'/></a>
           </div>
         </div>
         <div className='card-proyect'>
         <div className='card-proyect-img'>
             <Image src={gimnasia} alt='torneo' className='img-proyect'/>
-            git or web
+            <a href="https://github.com/BenjaMontero02/Tpe_Web2_LucasAmendola_BenjaminMontero"><Image src={gh} alt='gh'/></a>
           </div>
           <div className='card-proyect-content'>
             <div>
@@ -157,7 +160,7 @@ export default function Page() {
               </p>
             </div>
             <div className='tecnologies'>
-              <p>Se utilizo: </p><Image src={postgres} alt='postges'/> <Image src={mysql} alt='mysql'/>
+              <p>Se utilizo: </p><Image src={mysql} alt='mysql'/><Image src={php} alt='php'/> Smarty
             </div>
           </div>
           

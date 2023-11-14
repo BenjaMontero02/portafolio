@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 const axios = require('axios');
 import Image from 'next/image'
@@ -11,8 +11,10 @@ import github from "../../public/svg/github.svg"
 
 export default function Contact() {
 
+    const [submit, setSubmit] = useState(false);
+
     const {register, handleSubmit, 
-        formState: {errors}
+        formState: {errors}, reset
     } = useForm();
 
     const onSubmit = handleSubmit(async (data) => {
@@ -23,7 +25,14 @@ export default function Contact() {
             messageText: data.messageText
         })
 
+        setSubmit(true);
+        setTimeout(() => {setSubmit(false)}, 3000);
         document.getElementById("send").classList.add("success");
+        document.getElementById("email").value = ""
+        document.getElementById("subject").value = ""
+        document.getElementById("message").value = ""
+        
+
     })
 
     const sendMessageWsp = () => {
@@ -58,8 +67,9 @@ export default function Contact() {
             <div className='form-content'>
                 <form className='form' onSubmit={onSubmit}>
                     <div>
+                        {submit && <h3 className='submit-message'>Enviado!</h3>}
                         <label htmlFor='email' >Email:</label>
-                        <input type='email' {...register("email", {
+                        <input type='email' id='email' {...register("email", {
                             required: {
                                 value: true,
                                 message: "Email is required"
@@ -73,14 +83,14 @@ export default function Contact() {
                     </div>
                     <div>
                         <label htmlFor='subject'>Subject:</label>
-                        <input type='text' {...register("subject", {
+                        <input type='text' id='subject' {...register("subject", {
                             required: true
                         })}></input>
                         {errors.subject && <span className='error'>Subject is required</span>}
                     </div>
                     <div>
                         <label htmlFor='messageText'>Message:</label>
-                        <textarea className='input-text' {...register("messageText", {
+                        <textarea id='message' className='input-text' {...register("messageText", {
                             required: true
                         })}>
                         </textarea>

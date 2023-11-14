@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import menu from '../../public/svg/menu.svg'
 import close from '../../public/svg/close.svg'
+import Link from 'next/link'
 
 export default function Header() {
 
@@ -43,7 +44,7 @@ export default function Header() {
             <a href='#proyects' className='anc'><li className="hover" onClick={btnClose}>PROYECTS</li></a>
             <li className='barra'>|</li>
             <a href='#contact' className='anc'><li className="hover" onClick={btnClose}>CONTACT</li></a>
-            <button className='cv'>CV</button>
+            <Link href="cv.pdf" download='cv.pdf'><button className='cv'>CV</button></Link>
           </ul>
         </nav>
       </header><div className='overlay' id='overlay'></div></>

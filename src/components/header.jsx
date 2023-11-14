@@ -44,7 +44,7 @@ export default function Header() {
             <a href='#proyects' className='anc'><li className="hover" onClick={btnClose}>PROYECTS</li></a>
             <li className='barra'>|</li>
             <a href='#contact' className='anc'><li className="hover" onClick={btnClose}>CONTACT</li></a>
-            <Link href="cv.pdf" download='cv.pdf'><button className='cv'>CV</button></Link>
+            <Link href="cv.pdf" download='Benjamin-Montero-cv.pdf'><button className='cv'>CV</button></Link>
           </ul>
         </nav>
       </header><div className='overlay' id='overlay'></div></>

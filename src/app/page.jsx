@@ -54,7 +54,7 @@ export default function Page() {
           <div className='my-img' id='my-img'></div>
         <div>
           <div className='my'>
-            <h1>BENJAMIN MONTERO</h1>
+            <h1 id='about-me'>BENJAMIN MONTERO</h1>
             <h3 className='h3'>Full Stack</h3>
           </div>
           <div className='aboutMe'>

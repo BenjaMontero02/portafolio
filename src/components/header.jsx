@@ -36,13 +36,13 @@ export default function Header() {
     <header className="header" id='header'>
       <nav>
         <ul className='navBar' id='navBar'>
-          <a href="#about-me"><li className="hover" onClick={btnClose}>ABOUT ME</li></a>
+          <a href="#about-me" className='anc'><li className="hover" onClick={btnClose}>ABOUT ME</li></a>
           <li className='barra'>|</li>
-          <a href='#skills'><li className="hover" onClick={btnClose}>SKILLS</li></a>
+          <a href='#skills' className='anc'><li className="hover" onClick={btnClose}>SKILLS</li></a>
           <li className='barra'>|</li>
-          <a href='#proyects'><li className="hover" onClick={btnClose}>PROYECTS</li></a>
+          <a href='#proyects' className='anc'><li className="hover" onClick={btnClose}>PROYECTS</li></a>
           <li className='barra'>|</li>
-          <a href='#contact'><li className="hover" onClick={btnClose}>CONTACT</li></a>
+          <a href='#contact' className='anc'><li className="hover" onClick={btnClose}>CONTACT</li></a>
           <button className='cv'>CV</button>
         </ul>
       </nav>

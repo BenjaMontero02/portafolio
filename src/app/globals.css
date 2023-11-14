@@ -27,48 +27,43 @@ body {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  margin: 32px;
+}
+.cv {
+  cursor: pointer;
+  background-color: #6B5C9E;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  width: 60px;
+  text-align: center;
+  color: #FFFFFF;
+}
 
-  .btn-burger{
-    display: none;
-  }
+.anc {
+  color: inherit;
+  text-decoration: none;
+}
 
-  .navBar {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-    margin: 32px;
+.anc:visited{
+  background-color: transparent
+}
 
-    > a {
-      color: inherit;
-      text-decoration: none;
-    }
+.hover:hover{
+  color: var(--secondary);
+  transition: 1s;
+  scale: 1.2;
+  cursor: pointer;
+}
 
-    > a:visited{
-      background-color: transparent
-    }
-
-    > li {
-      cursor: pointer;
-
-    }
-    
-    > button {
-      cursor: pointer;
-      background-color: #6B5C9E;
-      border: none;
-      border-radius: 8px;
-      height: 30px;
-      width: 60px;
-      text-align: center;
-    }
-    .hover:hover{
-      color: var(--secondary);
-      transition: 1s;
-      scale: 1.2;
-      cursor: pointer;
-    }
-  }
+.btn-burger{
+  display: none;
 }
 
 .bannerMe{

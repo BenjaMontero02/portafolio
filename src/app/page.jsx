@@ -27,9 +27,10 @@ export default function Page() {
             <h3 className='h3'>Full Stack</h3>
           </div>
           <div className='aboutMe'>
-            <p>Hola! Soy Benjamin Montero y soy un apasionado desarrollador Full Stack con una gran preferencia por el backend. Tengo 21 años de edad, actualmente estoy finalizando mi carrera en TUDAI en la Facultad de Exactas, Tandil.
+            <p className='text-of-my'>Hola! soy un apasionado desarrollador Full Stack con una gran preferencia por el backend.
             Mi interés por el backend no solo se limita a la escritura de código, sino también a entender cómo las aplicaciones pueden ser mas eficientes, seguras y escalables que no solo cumplan con los requisitos.
-            Además de mi dedicación a la programación, disfruto aprendiendo sobre nuevas tecnologías y explorando formas innovadoras de resolver problemas, creo firmemente en el aprendizaje continuo y estoy comprometido a mejorar mis habilidades y conocimientos para seguir siendo relevante en un campo tan dinámico como el desarrollo web.</p>
+            Además de mi dedicación a la programación, disfruto aprendiendo sobre nuevas tecnologías y explorando formas innovadoras de resolver problemas, creo firmemente en el aprendizaje continuo y estoy comprometido a mejorar mis habilidades y conocimientos para seguir siendo relevante en un campo tan dinámico como el desarrollo web.
+            </p>
           </div>
         </div>
       </section>
@@ -104,7 +105,7 @@ export default function Page() {
           <div className='card-proyect-content'>
             <div>
               <h3>App Monopatines - Arquitecturas Web</h3>
-              <p>Este proyecto representó el trabajo final de la materia Arquitecturas Web, 
+              <p className='text-of-proyect'>Este proyecto representó el trabajo final de la materia Arquitecturas Web, 
                 enfocándose en la aplicación práctica de los conocimientos adquiridos en 
                 Spring Boot. Se desarrolló una aplicación con una arquitectura basada en microservicios,
                 implementando Spring Cloud Gateway junto con Spring Security + JWT. 
